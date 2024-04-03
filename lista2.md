@@ -26,30 +26,43 @@ J --> I
 ALGORITMO calReajuste
 DECLARE  sal, sal_reaj: real, prof: caractere
 
+ALGORITMO calReajuste
+DECLARE  sal, sal_reaj: real, prof: caractere
+
 INICIO
 
-    // Insira seu comentário
-    LEIA sal, prof
+    // Exibe uma mensagem para entrada de dados
+    ESCREVA "Digite seu salário atual:"
 
-    // Insira seu comentário
+    // Armazena o que o usuário digitou na variável "sal"
+    LEIA sal
+
+    // Exibe uma mensagem para entrada de dados
+    ESCREVA "Digite seu cargo:"
+
+    // Armazena o que o usuário digitou na variável "prof"
+    LEIA prof
+
+
+    // Define uma escolha 
     ESCOLHA
 
-        // Insira seu comentário
-        CASO prof == “Técnico”		
-            sal_reaj ← 1.5 * sal
+        // Aplica o reajuste para professores nível Técnico
+        CASO prof == "Técnico"        
+            sal_reaj <- 1.5 * sal
 
-        // Insira seu comentário
-        CASO prof = “Gerente”		
-            sal_reaj ← 1.3 * sal
+        // Aplica o reajuste para professores nível Gerente
+        CASO prof == "Gerente"        
+            sal_reaj <- 1.3 * sal
 
-    // Insira seu comentário
+    // Aplica o reajuste para todos os outros casos
     SENÃO
-        sal_reaj ← 1.1 * sal
+        sal_reaj <- 1.1 * sal
 
     FIM_ESCOLHA
 
-    // Insira seu comentário
-    ESCREVA “Salário Reajustado = “, sal_reaj
+    // Exibe o salário reajustado
+    ESCREVA "Salário Reajustado = ", sal_reaj
 
 FIM
 ```
@@ -91,31 +104,31 @@ DECLARE num1, num2, num3, num4: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite o número 1:"
 
-    // Insira seu comentário
+    // Armazena oque o usuário digitou na condição "num1"
     LEIA num1
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite o número 2:"
 
-    // Insira seu comentário
+    // Armazena oque o usuário digitou na condição "num2"
     LEIA num2
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite o número 3:"
 
-    // Insira seu comentário
+    // Armazena oque o usuário digitou na condição "num3"
     LEIA num3
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite o número 4:"
 
-    // Insira seu comentário
+    // Armazena oque o usuário digitou na condição "num4"
     LEIA num4
 
-    // Insira seu comentário
+    // Calcula e exibe o resultado da media com base na expressão "(num1 + num2 + num3 + num4)/4"
     media <- (num1 + num2 + num3 + num4)/4
     ESCREVA "A média é", media
 
@@ -150,13 +163,13 @@ DECLARE C, F: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite a temperatura em Celisus:"
 
-    // Insira seu comentário
+    // Armazena oque o usuário digitou na variavel "C"
     LEIA C
 
-    // Insira seu comentário
+    // Calcula e exibe o resutado "F" com base na expressão "(9/5) * C + 32"
     F <- (9/5) * C + 32
 
     // Insira seu comentário
@@ -217,72 +230,72 @@ DECLARE op: INTEIRO; num1,num2,res: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe uma mensagem
     ESCREVA "Operações válidas: 1(soma), 2(subtração), 3(multiplicação) e 4(divisão)"
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite uma operação:"
 
-    // Insira seu comentário
+    // Armazena oque o usuário digitou na variavel "C"
     LEIA op
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados, e armazena oque o usuário digitou na variavel "num1"
     ESCREVA "Digite um número:"
     LEIA num1
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados, e armazena oque o usuário digitou na variavel "num2"
     ESCREVA "Digite outro número:"
     LEIA num2
 
-    // Insira seu comentário
+    // Inicia uma escolha entre diferentes casos
     ESCOLHA
 
-        // Insira seu comentário
+        // executa as instruções caso a condição "op == 1" for verdadeira
         CASO op == 1
 
-            // Insira seu comentário
+            // Definne o valor da variavel "res" com base no calculo das variaveis "num1" + "num2"
             res = num1 + num2
 
-            // Insira seu comentário
+            // Exibe uma mensagem exibindo o processo usado para definir o valor do "resultado"
             ESCREVA num1, "+", num2, "=", res
 
-        // Insira seu comentário
+        // executa as instruções caso a condição "op == 2" for verdadeira
         CASO op == 2
 
-            // Insira seu comentário
+            // Definne o valor da variavel "res" com base no calculo das variaveis "num1" - "num2"
             res = num1 - num2
 
-            // Insira seu comentário
+            // Exibe uma mensagem exibindo o processo usado para definir o valor do "resultado"
             ESCREVA num1, "-", num2, "=", res
 
-        // Insira seu comentário
+        // executa as instruções caso a condição "op == 3" for verdadeira
         CASO op == 3
 
-            // Insira seu comentário
+            // Definne o valor da variavel "res" com base no calculo das variaveis "num1" * "num2"
             res = num1 * num2
 
-            // Insira seu comentário
+            // Exibe uma mensagem exibindo o processo usado para definir o valor do "resultado"
             ESCREVA num1, "*", num2, "=", res
 
-        // Insira seu comentário
+        // executa as instruções caso a condição "op == 4" for verdadeira
         CASO op == 4
 
-            // Insira seu comentário
+            // Executa as instruções caso a condição "num2 != 0" for verdadeira
             SE num2 != 0 ENTAO
 
-                // Insira seu comentário
+                // Definne o valor da variavel "res" com base no calculo das variaveis "num1" / "num2"
                 res = num1 / num2
 
-                // Insira seu comentário
+                // Exibe uma mensagem exibindo o processo usado para definir o valor do "resultado"
                 ESCREVA num1, "/", num2, "=", res
 
-            // Insira seu comentário
+            // Executa as instruções caso a condição "num2 != 0" for verdadeira
             SENAO
                 ESCREVA "Impossível dividir!"
 
             FIM_SE
 
-    // Insira seu comentário
+    //  Executa as instruções cason~~ao haja operações valdias
     SENAO
         ESCREVA "Operação inválida!"
 
@@ -338,49 +351,49 @@ DECLARE idade: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite a idade do aluno:"
 
-    // Insira seu comentário
+    // Armazena oque o usuário digitou na variavel "idade"
     LEIA idade
 
-    // Insira seu comentário
+    // Inicia uma escolha entre diferentes casos
     ESCOLHA
 
-        // Insira seu comentário
+        // executa as instruções caso a condições "idade >=5" E "idade <= 7" forem verdadeiras
         CASO idade >=5 E idade <= 7
 
-            // Insira seu comentário
+            // Exibe uma mensagem
             ESCREVA "Infantial A"
 
-        // Insira seu comentário
+        // executa as instruções caso a condições "idade >=8" E "idade <= 10" forem verdadeiras
         CASO idade >=8 E idade <= 10
 
-            // Insira seu comentário
+            // Exibe uma mensagem
             ESCREVA "Infantial B"
 
-        // Insira seu comentário
+        // executa as instruções caso a condições "idade >=11" E "idade <= 13" forem verdadeiras
         CASO idade >=11 E idade <= 13
 
-            // Insira seu comentário
+            // Exibe uma mensagem
             ESCREVA "Juvenil A"
 
-        // Insira seu comentário
+        // executa as instruções caso a condições "idade >=14" E "idade <= 17" forem verdadeiras
         CASO idade >=14 E idade <= 17
 
-            // Insira seu comentário
+            // Exibe uma mensagem
             ESCREVA "Juvenil B"
 
-        // Insira seu comentário
+        // executa as instruções caso a condição "idade >=18" for verdadeiro
         CASO idade >=18
 
-            // Insira seu comentário
+            // Exibe uma mensagem
             ESCREVA "Adulto"
 
-    // Insira seu comentário
+    // Inicia uma escolha entre diferentes casos
     SENAO
 
-        // Insira seu comentário
+        // Exibe uma mensagem
         ESCREVA "Digite uma idade válida!"
 
     FIM_ESCOLHA
