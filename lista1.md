@@ -34,7 +34,7 @@ INICIO
     // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite um número: "
     
-    // Armazena oque o usuário digitou na condição "numero"
+    // Armazena oque o usuário digitou na variável "numero"
     LEIA numero
     
     // Executa as instruções caso a condição "numero >= 0" for verdadeira
@@ -99,7 +99,7 @@ INICIO
     // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite seu salário atual:"
 
-    // Armazena oque o usuário digitou na condição "sal_atual"
+    // Armazena oque o usuário digitou na variável "sal_atual"
     LEIA sal_atual
 
     // Executa as instruções caso a variaveis "sal_atual <= 500" for verdadeira
@@ -159,13 +159,13 @@ INICIO
     // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite a nota 1:"
 
-    // Armazena oque o usuário digitou na condição "nota1"
+    // Armazena oque o usuário digitou na variável "nota1"
     LEIA nota1
 
     // Exibe uma mensagem para entrada de dados
     ESCREVA "Digite a nota 2:"
 
-    // Armazena oque o usuário digitou na condição "nota2"
+    // Armazena oque o usuário digitou na variável "nota2"
     LEIA nota2
 
     // Executa as instruções caso as variaveis "nota1 >= 0" e "nota2 >= 0 ENTAO" forem verdadeiras
@@ -234,7 +234,7 @@ INICIO
     // Exibe uma mensagem para entrada de dados
     ESCREVA ""Digite a sua idade:"
 
-    // Armazena oque o usuário digitou na condição "idade"
+    // Armazena oque o usuário digitou na variável "idade"
     LEIA idade
 
     // Executa as instruções caso a condição "idade < 0" for verdadeira
